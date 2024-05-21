@@ -1,0 +1,3163 @@
+!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Big Dipper VR</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <!-- <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
+    <script src="https://unpkg.com/super-hands@3.0.0/dist/super-hands.min.js"></script>
+    <script src="https://unpkg.com/aframe-physics-extras@0.1.2/dist/aframe-physics-extras.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.0.0/dist/aframe-extras.js"></script>
+
+  
+  </head>
+
+  <body>
+    <a-scene physics="debug: false">
+      <a-assets>
+        <a-mixin
+          id="controller"
+          physics-collider
+          static-body="shape: sphere; sphereRadius: 0.02"
+          super-hands="colliderEvent: collisions;
+                            colliderEventProperty: els;
+                            colliderEndEvent: collisions;
+                            colliderEndEventProperty: clearedEls"
+          collision-filter="group: hands;
+                                    collidesWith: blue;
+                                    collisionForces: false"
+        >
+        </a-mixin>
+        <a-mixin id="cube" dynamic-body grabbable geometry="primitive: box; width: 0.5; height: 0.5; depth: 0.5">
+        </a-mixin>
+      </a-assets>
+
+    
+<a-entity movement-controls="fly: true">
+  <a-entity camera position="0 0 0.5" look-controls ></a-entity>
+</a-entity>
+
+    
+  <a-sky color="#000000"></a-sky>
+    
+      <a-sphere 
+                static-body 
+                position="0 0 0" 
+                material="color: #dddddd" 
+                radius="0.25" 
+      ></a-sphere>
+        
+
+     <a-sphere
+       static-body
+       position=" 0.9516114673046309   14.469924391542166   25.99012694803618 "
+       material="color: #6776ac "
+       radius=" 0.18700898249047979 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 0.34280194613797904   14.334793048210495   8.555425131187526 "
+       material="color: #9796a7 "
+       radius=" 0.1503821030286842 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 1.2304934998067398   -30.767637320220704   29.949932400671667 "
+       material="color: #82694e "
+       radius=" 0.16167852016697895 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 5.690030239245356   26.753102994368763   98.41496558601457 "
+       material="color: #55649a "
+       radius=" 0.2349535556888181 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 7.430430906947522   -13.623305173802612   87.44370124844741 "
+       material="color: #896844 "
+       radius=" 0.20910909334979438 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 0.18491174639399455   -7.290765969545129   1.6387646556366375 "
+       material="color: #9b8e88 "
+       radius=" 0.09325249321213348 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 1.9408917691782375   -16.246244509803226   16.90163468739433 "
+       material="color: #5f6581 "
+       radius=" 0.12774000404331992 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 2.0083470598037607   -15.972703491739738   17.434799471368905 "
+       material="color: #a4825c "
+       radius=" 0.1664645757552001 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 17.333954010969215   147.97767408193855   106.5182219133929 "
+       material="color: #4a5786 "
+       radius=" 0.24515231182611813 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 4.553661855701736   15.935303678291971   26.27543628552331 "
+       material="color: #906b44 "
+       radius=" 0.15933627007850865 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 6.793996050027983   58.461475811087304   38.03807667042824 "
+       material="color: #a88157 "
+       radius=" 0.22924839552487947 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 5.2823558055591375   -9.071522760920107   27.43764321325849 "
+       material="color: #ad8b67 "
+       radius=" 0.1870526982376415 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 0.6741769397566607   5.038004556382941   3.0982338323131633 "
+       material="color: #8c827f "
+       radius=" 0.06489096340240488 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 22.518429811023683   163.94966548919905   89.14101266345347 "
+       material="color: #6574aa "
+       radius=" 0.2850624381273293 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 8.016191102828367   26.013609891478772   31.70671358688164 "
+       material="color: #5c6382 "
+       radius=" 0.16068355483753063 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 11.84433427673226   -44.228015011171905   39.931978777439625 "
+       material="color: #8f7861 "
+       radius=" 0.19449766330467894 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 14.372515155094828   -70.46352970896456   46.72969364897408 "
+       material="color: #475380 "
+       radius=" 0.1977140733613359 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 10.464786438912336   -6.3750478289946075   33.916320240564616 "
+       material="color: #8c6b49 "
+       radius=" 0.16268265846697758 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 14.88598718505495   35.59991887953013   47.405499933248485 "
+       material="color: #ac743d "
+       radius=" 0.22607847974729728 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 12.458336245128729   -4.997882266990527   32.44516642054008 "
+       material="color: #886c4e "
+       radius=" 0.15773389404360794 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 5.534121647805157   26.457522983820255   14.082354505470162 "
+       material="color: #737b9e "
+       radius=" 0.17355061336595431 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 19.628552366435635   -49.21448535733842   48.36020787535962 "
+       material="color: #8d6033 "
+       radius=" 0.20126854544396147 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 11.467184352328124   -34.11022307935327   27.26212227406042 "
+       material="color: #816950 "
+       radius=" 0.16312967584432428 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 33.796077554556156   23.863334738286394   80.12012445606612 "
+       material="color: #886f55 "
+       radius=" 0.20843494889556533 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 9.867927620044593   -37.07733498943193   21.724967023390924 "
+       material="color: #7388d2 "
+       radius=" 0.24884601088660166 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 14.609218605680988   40.00195186804535   32.059746948201806 "
+       material="color: #896540 "
+       radius=" 0.1806472879088296 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 1.5383797693631536   -1.0015256357131497   3.1517704693946573 "
+       material="color: #8b7b6e "
+       radius=" 0.03754890065841989 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 36.52174970306413   -14.249710130537807   69.07918223266041 "
+       material="color: #856747 "
+       radius=" 0.19854817590072746 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 8.09728345209502   9.703569007565495   15.056885864912289 "
+       material="color: #8c878c "
+       radius=" 0.13074367496029096 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 28.111447776790147   20.7025760963085   52.028882209429746 "
+       material="color: #4d5882 "
+       radius=" 0.18217228128737145 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 28.768388439023905   121.44378072963855   52.76746307357455 "
+       material="color: #4e5c8e "
+       radius=" 0.2372943469363301 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 8.190159861068436   6.489551645451116   14.984434784160896 "
+       material="color: #747c9f "
+       radius=" 0.14626329302994717 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 5.262800839014422   -13.70501641117687   9.49846117196425 "
+       material="color: #86725f "
+       radius=" 0.11763638009587626 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 5.155816501301831   -19.226021977891087   9.041868385903902 "
+       material="color: #7f829a "
+       radius=" 0.15051437213036908 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 43.04100308437037   -33.17673522620997   74.54534859415597 "
+       material="color: #7f562e "
+       radius=" 0.2004227318889143 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 21.625778271302927   2.0562046250881374   36.69607507730541 "
+       material="color: #535d83 "
+       radius=" 0.16278353628282255 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 7.699351979619173   47.38086379695456   12.885712282700789 "
+       material="color: #4f5a80 "
+       radius=" 0.16784789511622406 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 41.40147963618434   73.27487915109724   68.97231717073072 "
+       material="color: #ac7b49 "
+       radius=" 0.2566369532409464 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 9.76753254395227   8.046635780871082   15.757492696745633 "
+       material="color: #ae865c "
+       radius=" 0.16749768079457492 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 16.72340110653884   21.85193627022452   26.36615721881836 "
+       material="color: #6b7496 "
+       radius=" 0.17718091332625746 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 16.57927703876546   -37.16715610683082   24.462247108297934 "
+       material="color: #4c5989 "
+       radius=" 0.17511909630802683 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 1.044857723186953   132.2642223101931   1.3395474690558264 "
+       material="color: #af9f97 "
+       radius=" 0.2704861677265595 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 16.408011381656994   1.4189459670197562   18.991995482522583 "
+       material="color: #5f688b "
+       radius=" 0.14284329481565822 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 29.364714783634685   22.397894271997263   32.050490572463296 "
+       material="color: #4d5988 "
+       radius=" 0.17546472812129021 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 155.127089002091   337.96582102729565   168.26152626325302 "
+       material="color: #84562a "
+       radius=" 0.2866556316186437 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 31.713367623625103   60.542495468341286   33.34375503012357 "
+       material="color: #817163 "
+       radius=" 0.19143567306098822 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 28.077685182923197   -6.315981660232251   28.96696899129917 "
+       material="color: #826648 "
+       radius=" 0.15867779402362103 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 26.46607364604814   -31.990700904330303   26.870734490128648 "
+       material="color: #6c7599 "
+       radius=" 0.19432874825733754 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 48.06251073807245   4.812329658408033   47.1158024812514 "
+       material="color: #a16a36 "
+       radius=" 0.21969536670879658 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 33.745907888360726   63.20154988178743   32.36214805544326 "
+       material="color: #99887a "
+       radius=" 0.21874050325016095 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 56.13779935570054   62.527563520249124   53.65743385362175 "
+       material="color: #8f6135 "
+       radius=" 0.22138877553665806 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 15.728805816608155   18.653233255011227   14.645697348324083 "
+       material="color: #6a78ac "
+       radius=" 0.1840761725193008 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 17.95436766825223   24.28043013909404   16.524902618181926 "
+       material="color: #846c52 "
+       radius=" 0.1519081250734166 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 9.176399088973636   -6.839127845757116   8.256997400952782 "
+       material="color: #847c7d "
+       radius=" 0.1032512486645655 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 56.2319799751332   -29.34955764349589   47.3866662620166 "
+       material="color: #86592d "
+       radius=" 0.19937597334479396 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 91.02571790847448   138.74497337476598   73.49910861696998 "
+       material="color: #b2abb3 "
+       radius=" 0.2921574423077372 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 49.916810294811185   10.177179987099374   40.12940197933745 "
+       material="color: #88725c "
+       radius=" 0.19079084544984304 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 52.756425593902584   11.515774323076283   41.5266908296406 "
+       material="color: #4c5885 "
+       radius=" 0.19046063521670384 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 2.5428248470449697   -0.5288144478121776   1.900014657880408 "
+       material="color: #86705b "
+       radius=" 0.025 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 89.84574186834062   119.84767549940018   61.21680360552829 "
+       material="color: #526196 "
+       radius=" 0.2554278327781083 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 7.372204578465285   -1.5335494958269384   5.0078711401880165 "
+       material="color: #8a735b "
+       radius=" 0.08609181896387061 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 10.794981804993379   -27.663660689291227   7.267634561931478 "
+       material="color: #836546 "
+       radius=" 0.1442163241485876 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 317.4215839607595   241.70994030768676   213.46160161420644 "
+       material="color: #535d83 "
+       radius=" 0.29050235795357143 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 86.209034641412   46.42533741572071   57.67073376096555 "
+       material="color: #4b5786 "
+       radius=" 0.2184910581454392 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 104.53905441802641   115.4608070910175   69.7229262778548 "
+       material="color: #7d7a84 "
+       radius=" 0.23931419016194894 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 83.79909019497485   45.539927749367585   55.55653878265277 "
+       material="color: #4c5782 "
+       radius=" 0.21316036745460867 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 14.925288371058787   -63.19126246580513   9.763206164585913 "
+       material="color: #906032 "
+       radius=" 0.20021390424720495 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 86.17999165420261   46.04422814184508   56.24188026298678 "
+       material="color: #58669a "
+       radius=" 0.2398109396852445 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 89.65670095055025   47.55987660917564   57.579366045859786 "
+       material="color: #4f5b88 "
+       radius=" 0.22242878942381053 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 218.14803595355238   159.09513100132824   133.50848983129643 "
+       material="color: #7d819a "
+       radius=" 0.2934091317012058 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 108.86129380639943   106.09309729136356   64.21774859632627 "
+       material="color: #546399 "
+       radius=" 0.2592423141434245 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 56.80378032138322   -15.836601723734855   33.450156016345225 "
+       material="color: #976535 "
+       radius=" 0.2092023896249376 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 380.783924196286   317.84278678992285   222.14451601851425 "
+       material="color: #505a7f "
+       radius=" 0.29694916428801826 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 96.13779380493537   24.548821886134803   55.1253553468749 "
+       material="color: #4f5d8d "
+       radius=" 0.22617940361270436 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 34.39241981035062   4.134026279713654   19.229874132985863 "
+       material="color: #535c81 "
+       radius=" 0.1565402233426982 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 101.0189194380036   125.59899077386633   53.33926978880802 "
+       material="color: #4d5880 "
+       radius=" 0.2342869803158226 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 23.76959527667197   -24.163009183113964   11.850836243117149 "
+       material="color: #836749 "
+       radius=" 0.15269824222549183 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 20.719634308229775   -44.38438747963683   10.282529465224012 "
+       material="color: #8f775e "
+       radius=" 0.18372695667796485 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 41.04454658188353   -30.447271680182897   19.600470344118392 "
+       material="color: #4d5a8a "
+       radius=" 0.18308407374514307 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 41.21099645795227   12.724821284669812   19.26225144471483 "
+       material="color: #876e54 "
+       radius=" 0.1725862849117838 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 40.8289310066933   14.157509948939435   18.406047727444978 "
+       material="color: #846c52 "
+       radius=" 0.16927943448441995 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 63.369675724619945   -46.81478134271668   28.201754749053755 "
+       material="color: #805932 "
+       radius=" 0.19563040400369075 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 42.882524435019626   13.310880690069935   18.075727982438714 "
+       material="color: #836c53 "
+       radius=" 0.16916010251626007 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 41.368640489644136   15.615213452312586   17.42873006211742 "
+       material="color: #8a6f53 "
+       radius=" 0.17592067522899762 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 40.49785596331705   12.492938908204632   17.05236046843779 "
+       material="color: #686f8d "
+       radius=" 0.17702067196821886 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 28.72110856990229   -44.15959180960249   11.314082241146176 "
+       material="color: #525f8f "
+       radius=" 0.1884791456788549 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 51.42621694239925   -32.552853398721474   19.856450977526762 "
+       material="color: #836c53 "
+       radius=" 0.1850912634715501 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 17.867303976954695   5.673208138189783   6.865714580844885 "
+       material="color: #c88849 "
+       radius=" 0.195332513203021 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 167.71220888139655   -10.517638002851527   64.11096961265591 "
+       material="color: #475381 "
+       radius=" 0.2381670432164531 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 30.42562635969302   -8.279725090630413   11.348386210570713 "
+       material="color: #826749 "
+       radius=" 0.14870153981413142 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 7.596131968536512   0.972700534078459   2.40087635872255 "
+       material="color: #918c92 "
+       radius=" 0.08786163687381646 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 367.0728495900381   37.71102514718317   113.61738345457975 "
+       material="color: #4a5786 "
+       radius=" 0.2858889216540538 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 394.3460448566417   17.524642648630923   116.33985512396076 "
+       material="color: #495686 "
+       radius=" 0.2886006079644213 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 126.47624093539103   85.88193102016025   35.67377442884604 "
+       material="color: #9e6d3c "
+       radius=" 0.26178396312229146 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 436.54580370309185   432.7729588465386   112.9616189704885 "
+       material="color: #968d8e "
+       radius=" 0.32828639433221973 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 176.38191311494455   158.7095162891456   45.22310181840443 "
+       material="color: #866747 "
+       radius=" 0.2601763495240979 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 62.45155334637838   -26.44912429409863   15.148700140207833 "
+       material="color: #926639 "
+       radius=" 0.20504379292213465 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 49.20192795628117   44.326971328046795   11.695493174428734 "
+       material="color: #505e92 "
+       radius=" 0.20351252109896603 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 26.43383161459581   -2.4151095646120573   6.120986840960951 "
+       material="color: #71799c "
+       radius=" 0.16445334410121196 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 53.142271183156694   -15.776300369434448   11.070136376214467 "
+       material="color: #505e90 "
+       radius=" 0.1913354130504949 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 229.94374885282258   -33.805041210643054   46.220856054140654 "
+       material="color: #8395d9 "
+       radius=" 0.34688733579400105 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 8.827997029881667   9.306707775417118   1.6884494696234167 "
+       material="color: #dbbea2 "
+       radius=" 0.19153597875197176 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 165.9754381577293   -20.267614097331354   31.056587490475263 "
+       material="color: #4c5989 "
+       radius=" 0.243629226404693 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 272.6925850070094   -11.554113220680415   42.60872551294831 "
+       material="color: #4e5c8e "
+       radius=" 0.27596282084756457 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 73.20302468379548   8.24116978980852   11.224176457224454 "
+       material="color: #6476b6 "
+       radius=" 0.24758232768508864 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 34.891204883375636   19.236882907389734   5.1691037894079415 "
+       material="color: #6476b6 "
+       radius=" 0.21379828008813612 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 45.19841496285805   -17.298444169692107   6.302880526032587 "
+       material="color: #9b8671 "
+       radius=" 0.19535864736406094 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 68.64893094541226   -49.30195250827168   8.668543446255043 "
+       material="color: #826546 "
+       radius=" 0.19920433430878096 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 278.8022975477543   -1.4663250439639508   34.2243705313386 "
+       material="color: #5c6da8 "
+       radius=" 0.30437014241760085 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 372.1571460908557   -120.49829448711364   44.49190532924332 "
+       material="color: #7a81a0 "
+       radius=" 0.31444717758671803 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 146.13083420803923   -282.4614079950421   16.891570290289366 "
+       material="color: #857972 "
+       radius=" 0.27343518615505846 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 316.898535466836   55.83054016539476   34.5130090901113 "
+       material="color: #4d5b8d "
+       radius=" 0.283556582236106 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 402.0226879874466   -41.85545975491605   43.260070811616714 "
+       material="color: #56659c "
+       radius=" 0.3119345037762879 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 409.2181195128684   -8.632065793191854   42.625065240966336 "
+       material="color: #6375b5 "
+       radius=" 0.3391006079644213 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 118.7023475206319   46.123982245120374   11.615460193793071 "
+       material="color: #536297 "
+       radius=" 0.2436505480317293 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 350.2386968664243   -15.973306012129049   32.573691100449324 "
+       material="color: #495584 "
+       radius=" 0.2786365996583306 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 67.84951385157726   -46.07440249205687   6.04078674930278 "
+       material="color: #57679f "
+       radius=" 0.22768469529712076 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 249.60028178639072   -8.49568582008814   21.00472442319692 "
+       material="color: #6374b4 "
+       radius=" 0.31092978020336676 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 8.270705579603224   -3.424979398206175   0.5615497956827376 "
+       material="color: #888388 "
+       radius=" 0.08389690273175017 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 20.769529300378988   -5.504973739507626   1.183408812082146 "
+       material="color: #5f678a "
+       radius=" 0.13240480810435176 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 12.096604409936951   -14.996645636852836   0.6718157360794932 "
+       material="color: #606683 "
+       radius=" 0.11893686116501219 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 217.78458925523725   -37.16071758339332   11.645662818283082 "
+       material="color: #5f6fac "
+       radius=" 0.2959090878127875 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 21.369428228016098   -15.406140516756116   0.8433536420004855 "
+       material="color: #94724e "
+       radius=" 0.15416422634512983 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 32.139925198321286   -12.268399908459832   1.217614298133184 "
+       material="color: #856c52 "
+       radius=" 0.1526581250734166 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 51.0862174569679   41.61715400744731   1.8978032247429362 "
+       material="color: #806345 "
+       radius=" 0.182678194565869 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 129.93908585078265   16.89617784878437   2.73785720790936 "
+       material="color: #d29150 "
+       radius=" 0.30798582491985027 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 14.584988629162424   -3.6822752074243783   0.2288085709296299 "
+       material="color: #747586 "
+       radius=" 0.10897318231744269 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 119.4699139649494   -110.68975651906187   0.44478692428048167 "
+       material="color: #806344 "
+       radius=" 0.2320303457715643 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 25.1402853214731   34.966719424082264   0.051855586696576764 "
+       material="color: #866c50 "
+       radius=" 0.1658186152388909 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 17.818573441162563   17.78594495617932   0.036641565548289866 "
+       material="color: #7682b0 "
+       radius=" 0.18217523718629236 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 42.29402588499925   32.11758153610497   0.051459753582018146 "
+       material="color: #5b699f "
+       radius=" 0.2039451021621272 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 196.03195608392838   -21.60014219687283   -12.724529825841575 "
+       material="color: #7f5d39 "
+       radius=" 0.24178257755923535 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 98.7032386223002   40.98426763167223   -6.416421594196169 "
+       material="color: #8f5f31 "
+       radius=" 0.2255080326354486 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 88.87367185896206   -51.64510210486948   -7.897840826696107 "
+       material="color: #526196 "
+       radius=" 0.23070492538092968 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 60.408457568061095   -40.073527905499844   -5.846949102052762 "
+       material="color: #836f5b "
+       radius=" 0.19101355489342514 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 144.96655684907927   -47.21059391139585   -14.40554835736458 "
+       material="color: #6071ae "
+       radius=" 0.27818724450482607 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 65.32741273052197   27.21410731344654   -6.56673702238045 "
+       material="color: #996634 "
+       radius=" 0.2142646299848671 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 57.78925698944476   -76.26343062892852   -6.061615841655713 "
+       material="color: #acb8eb "
+       radius=" 0.31776585361089393 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 208.61017216142838   -25.9411168066853   -26.37008512877414 "
+       material="color: #4a5685 "
+       radius=" 0.2513086423349494 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 18.488145495591592   -6.542105094635613   -2.9848202341313774 "
+       material="color: #80674b "
+       radius=" 0.11798680498444147 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 30.410013852549767   9.072266573296336   -5.049571856244715 "
+       material="color: #6d7bb0 "
+       radius=" 0.1946714436245039 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 93.27421053081012   -88.78020341143069   -15.508852792777592 "
+       material="color: #526092 "
+       radius=" 0.23941959490784068 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 246.1927311851013   117.64301455157644   -47.7793280197056 "
+       material="color: #956b3f "
+       radius=" 0.2833629919260031 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 2.476774158942196   -0.7584977167238782   -0.494330924266708 "
+       material="color: #9fb3ff "
+       radius=" 0.14319141948563913 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 16.76266871493317   3.9139794426587438   -3.356312948018026 "
+       material="color: #88858e "
+       radius=" 0.12629799054253016 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 13.956737662486434   -26.773874519012903   -2.9787471484025487 "
+       material="color: #707591 "
+       radius=" 0.15880299178607551 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 199.3822081695314   -130.12697187636695   -44.05685695130615 "
+       material="color: #4d5a8b "
+       radius=" 0.2650576357071602 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 34.707640408076905   -43.299431024546024   -7.6843526947574 "
+       material="color: #98734c "
+       radius=" 0.19959661460818381 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 48.6745377024269   33.67282355445377   -11.414038333043791 "
+       material="color: #5e6688 "
+       radius=" 0.1870705939111652 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 537.5179795378147   -248.28585544616837   -129.37547633728383 "
+       material="color: #825227 "
+       radius=" 0.305115899137472 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 111.80823123265472   -63.987241900633805   -29.2415287819592 "
+       material="color: #6678ba "
+       radius=" 0.2821644072267012 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 317.7753413199422   -174.80110932464416   -87.70764862427748 "
+       material="color: #8b592a "
+       radius=" 0.2887845429106116 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 693.1931570076272   -318.1707501577374   -195.58082938862316 "
+       material="color: #566496 "
+       radius=" 0.3410759270447157 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 470.4260196621254   -244.2466294960468   -144.70262712259654 "
+       material="color: #b2a195 "
+       radius=" 0.35129246866607594 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 13.853942213759492   -40.94853462127718   -4.2850516648758745 "
+       material="color: #846b50 "
+       radius=" 0.1647882272524887 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 71.74250112736392   -187.6322770940596   -24.994055538379417 "
+       material="color: #807062 "
+       radius=" 0.24358552354875443 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 252.6347663856148   -202.4069686941916   -88.40041876714288 "
+       material="color: #9d6835 "
+       radius=" 0.30252435915467835 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 26.120394556051682   8.230444297050502   -9.261644390692732 "
+       material="color: #5e6789 "
+       radius=" 0.14768257191241513 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 15.71156215493326   6.750594760327529   -5.728088936454428 "
+       material="color: #7c7c8b "
+       radius=" 0.12406369835356293 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 798.0317501150238   -479.8330287381603   -306.7154570254023 "
+       material="color: #5d6ca3 "
+       radius=" 0.36722637069397057 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 31.79267894114235   18.00606191740112   -12.479678739488191 "
+       material="color: #846a4f "
+       radius=" 0.1583889216540538 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 47.95744578945451   7.524617519335975   -19.16964689307227 "
+       material="color: #566599 "
+       radius=" 0.19700195407139462 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 37.95320178409871   -38.66045937211421   -15.571644294222944 "
+       material="color: #916336 "
+       radius=" 0.19218219022724686 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 12.292896152427145   8.349369516874727   -5.383268148631093 "
+       material="color: #7684b8 "
+       radius=" 0.16490166285681668 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 112.93082921384918   -62.804638400246986   -51.96098736580039 "
+       material="color: #485584 "
+       radius=" 0.2275358366339228 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 3.1609817424612596   0.3184939932046084   -1.4622856859963167 "
+       material="color: #c9c4d3 "
+       radius=" 0.11251892663090127 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 39.42783101821698   -7.338686582995695   -18.64738729041741 "
+       material="color: #80674c "
+       radius=" 0.16176382187104035 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 11.080401148994502   -39.173733608476034   -5.274462295472126 "
+       material="color: #81674c "
+       radius=" 0.15796673166910558 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 35.97663261597416   18.173010254975132   -17.63403094898082 "
+       material="color: #897159 "
+       radius=" 0.17072646269858893 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 300.7062685507385   -261.79970473672006   -148.7079864939533 "
+       material="color: #88582a "
+       radius=" 0.29266790938024323 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 8.178211906598722   4.857093688274631   -4.04706869213381 "
+       material="color: #c29d77 "
+       radius=" 0.15235063178265573 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 333.10170610221337   -173.71862876188231   -172.10013147628231 "
+       material="color: #8e6b46 "
+       radius=" 0.2980744714166564 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 70.85636697755199   -68.75827490376977   -37.76119705970141 "
+       material="color: #866c50 "
+       radius=" 0.2148150001139862 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 62.34634551937538   -94.71532461312202   -34.836544805071355 "
+       material="color: #4d5a8c "
+       radius=" 0.2273229453361175 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 282.1085069134312   -275.8925722997497   -168.8118961536962 "
+       material="color: #5d6da9 "
+       radius=" 0.32838190203595796 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 14.884526925647295   -7.91658280218309   -9.259770008022441 "
+       material="color: #96929a "
+       radius=" 0.14431141498501288 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 147.49992429408434   -189.52255200308358   -93.54537499648052 "
+       material="color: #6374b4 "
+       radius=" 0.3121974264649344 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 72.76608352731238   14.214793895960462   -49.319769487888 "
+       material="color: #8a6035 "
+       radius=" 0.21000392263152806 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 79.92577345380892   -166.9986728134257   -57.28135026809285 "
+       material="color: #b18759 "
+       radius=" 0.2939701794608089 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 30.77299083775991   -2.611235886605009   -22.700354977636525 "
+       material="color: #4f5a81 "
+       radius=" 0.1547421322766827 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+
+       position=" 10.773881566680174   -30.271917197799425   -7.953105231852457 "
+       material="color: #846747 "
+       radius=" 0.15028255150505024 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 21.82938605248096   49.111735260924014   -16.79033930843126 "
+       material="color: #8e7963 "
+       radius=" 0.18962102198388753 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 74.39270430607189   -68.8067371538754   -62.47954920751174 "
+       material="color: #806a53 "
+       radius=" 0.21476648140647508 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 70.0083026205445   -121.06438533582234   -58.89667152186358 "
+       material="color: #4b5888 "
+       radius=" 0.2371907153399591 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 499.6745924276328   -692.5323323112005   -421.6085255826045 "
+       material="color: #84786f "
+       radius=" 0.332652729780468 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 163.88289214705077   -141.80424324367578   -141.9501672713032 "
+       material="color: #4a5786 "
+       radius=" 0.2642279790802409 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 29.840396713697828   12.998633762559882   -26.096853924760453 "
+       material="color: #806548 "
+       radius=" 0.1585928879100036 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 10.632124379606283   -19.956639258454068   -9.299838853676256 "
+       material="color: #727fb0 "
+       radius=" 0.17983597866329257 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 247.53463449365182   -342.78242555466187   -219.05292299229734 "
+       material="color: #525c82 "
+       radius=" 0.29252398032247034 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 30.751318147736267   4.633036220258837   -27.392450894618747 "
+       material="color: #8e7f75 "
+       radius=" 0.17223172692561206 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 33.8805128634067   -83.40629227607555   -32.446891518975995 "
+       material="color: #495683 "
+       radius=" 0.2061618558583262 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 33.14673734434411   4.786669200619727   -31.84041969427917 "
+       material="color: #94795c "
+       radius=" 0.18489423510989383 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 6.943718916653188   10.884559414444595   -6.895866263010089 "
+       material="color: #727894 "
+       radius=" 0.12223290995409171 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 8.639473127674462   10.948243434836996   -8.687823319046657 "
+       material="color: #7d7980 "
+       radius=" 0.10750989866144178 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 10.674362474656512   -34.921315266575874   -10.904734550994158 "
+       material="color: #5b627f "
+       radius=" 0.15218091332625744 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 61.37029671963696   95.0991053345722   -63.3433045236559 "
+       material="color: #566089 "
+       radius=" 0.22941959490784072 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 44.792222932181055   -69.43279736084838   -46.44639461336568 "
+       material="color: #856644 "
+       radius=" 0.20789483470999634 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 87.04137984306355   -120.82612813786639   -93.33716516167432 "
+       material="color: #a86e37 "
+       radius=" 0.2794123588648264 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 44.50328263523554   -109.99609500319507   -48.9805881575161 "
+       material="color: #4d5b8c "
+       radius=" 0.23235920995513976 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 47.77175806820819   -135.60969723021816   -52.721264721377636 "
+       material="color: #465380 "
+       radius=" 0.22868724450482608 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 7.859754499745749   -31.969771234912983   -8.821563401868296 "
+       material="color: #7985b6 "
+       radius=" 0.20436887847580235 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 26.080866697300323   1.5935607241164922   -29.57365271492036 "
+       material="color: #4c5782 "
+       radius=" 0.1568255658457825 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 70.77543236999678   -182.51198895928323   -82.20427129325938 "
+       material="color: #7e86a9 "
+       radius=" 0.2901737787730983 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 19.35588400222975   22.394762203235867   -22.83257203185579 "
+       material="color: #576083 "
+       radius=" 0.1556359188695544 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 35.90907535099936   38.45200014395313   -43.19706050181665 "
+       material="color: #936435 "
+       radius=" 0.20517366769042825 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 60.251738711882645   -135.41468184714884   -73.1650882390865 "
+       material="color: #5969a3 "
+       radius=" 0.2700819703326517 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 33.15468900724925   -8.181878918238018   -42.27895049049763 "
+       material="color: #ae7a46 "
+       radius=" 0.22169916428801825 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 8.55983271951194   -12.043178994887931   -11.226221851269162 "
+       material="color: #7a7a88 "
+       radius=" 0.12311286921470713 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 23.97539495492945   -61.15139899671083   -31.59270774556244 "
+       material="color: #936436 "
+       radius=" 0.2083821282428687 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 6.328310515969796   20.63648532977254   -8.362100330429145 "
+       material="color: #787887 "
+       radius=" 0.13386592381234627 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 5.007747319554907   10.580320448215323   -6.697480656316779 "
+       material="color: #918c92 "
+       radius=" 0.11653749774366018 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 48.51874110412224   -1.6859236979176166   -69.19938338327049 "
+       material="color: #815f3a "
+       radius=" 0.19792829908571902 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 23.25831072007327   7.1225890169219515   -33.57378521726898 "
+       material="color: #8a8486 "
+       radius=" 0.1687542292306961 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 118.5427015245878   -410.6826465237361   -177.8260296890146 "
+       material="color: #866c51 "
+       radius=" 0.2954946732703439 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 38.862061162782716   30.986481689504416   -58.63143430241194 "
+       material="color: #97826f "
+       radius=" 0.21601673009401204 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 114.89408006951231   -451.1632831331835   -175.41285042452589 "
+       material="color: #7c8098 "
+       radius=" 0.3186518849866492 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 9.684050080661233   30.2474533592232   -15.346702322685742 "
+       material="color: #6d7084 "
+       radius=" 0.1534822592605946 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 19.319654975827238   17.88255265081355   -31.148372759657693 "
+       material="color: #826240 "
+       radius=" 0.15886133393341312 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 175.57152127018688   -482.13137063562715   -294.70625886407566 "
+       material="color: #505d8a "
+       radius=" 0.31306555408750114 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 295.413648820013   188.50190773647844   -551.7100070374057 "
+       material="color: #54608b "
+       radius=" 0.3194649633120104 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 10.878266612582737   4.9263915211865195   -20.53936829285622 "
+       material="color: #6c7dbd "
+       radius=" 0.19252902644570752 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 15.781716522593024   -7.522944778884287   -30.50722812971433 "
+       material="color: #886e52 "
+       radius=" 0.15756019315699424 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 17.330509561862808   -106.68770425635009   -34.659948855017525 "
+       material="color: #536090 "
+       radius=" 0.22917940361270434 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 10.366338059778503   -21.144726125259858   -20.95993525933384 "
+       material="color: #555f83 "
+       radius=" 0.14563474483351452 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 31.82950474532568   31.642129927202642   -65.76213040247211 "
+       material="color: #76788c "
+       radius=" 0.20642768723906313 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 47.011189073259835   -198.06247896640042   -97.5544780473251 "
+       material="color: #8d6033 "
+       radius=" 0.2640009263863266 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 13.098384149914995   28.055397900209783   -27.18501465179633 "
+       material="color: #59648c "
+       radius=" 0.17016767012271844 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 15.317089493467707   13.074697118678445   -32.837344477141535 "
+       material="color: #ae875e "
+       radius=" 0.20251330614816884 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 23.616361135812664   50.54261833986637   -52.01914269273129 "
+       material="color: #956333 "
+       radius=" 0.21335105570294974 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 1.8074045744190734   -15.589648573051813   -4.078405083871223 "
+       material="color: #72717f "
+       radius=" 0.10604214861092218 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 29.01908337249391   -22.042472840273863   -66.81141384068214 "
+       material="color: #835b34 "
+       radius=" 0.19397697151124008 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 64.86106943026053   -273.1041243897596   -152.5787785745222 "
+       material="color: #707183 "
+       radius=" 0.27235834997090425 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 27.078383571627292   -134.20060370563397   -67.04189186799981 "
+       material="color: #525f8f "
+       radius=" 0.24493841224225274 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 642.8680773206414   283.71447243000944   -1607.5126273771593 "
+       material="color: #485483 "
+       radius=" 0.3640670352051488 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 6.237238062583432   -19.776557123293056   -16.52869388799962 "
+       material="color: #6d6f83 "
+       radius=" 0.13649432561350777 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 19.18715137557476   -121.37155697261676   -54.9102215786245 "
+       material="color: #56659d "
+       radius=" 0.25217779044413835 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 7.251090221968045   -26.951785786758702   -21.91553132485601 "
+       material="color: #9e846a "
+       radius=" 0.1810587685675431 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 12.331102959248408   -11.847266306319096   -38.88716565287883 "
+       material="color: #946f48 "
+       radius=" 0.18032558485078332 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 7.10305782410485   16.8352702900069   -23.71773629758248 "
+       material="color: #84694d "
+       radius=" 0.14433308381276472 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 4.390273217482919   -25.38844923469037   -14.702101465217439 "
+       material="color: #846d55 "
+       radius=" 0.14408154809908882 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 3.384302786745278   20.276393245833813   -13.048840880263404 "
+       material="color: #6a77a6 "
+       radius=" 0.16936080430750375 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 4.361178446567643   33.39269421203652   -17.403651431877172 "
+       material="color: #b28e66 "
+       radius=" 0.20664204326291696 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 208.45362483196752   -1558.0778605405208   -913.6331817282186 "
+       material="color: #81613f "
+       radius=" 0.3637560559774299 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 6.996938758762958   31.557425805051153   -31.343277805629654 "
+       material="color: #967450 "
+       radius=" 0.18623282234565103 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 3.2958168469606557   6.203026789528195   -16.238751952010258 "
+       material="color: #717ba1 "
+       radius=" 0.14652612301714515 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 10.413546259609872   14.490939488775147   -51.46009171673269 "
+       material="color: #58648f "
+       radius=" 0.18831730755605736 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 19.50261089285333   70.54505191271494   -106.46791413359831 "
+       material="color: #8b633a "
+       radius=" 0.2312087720788487 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 10.187579274688028   -15.22887416223425   -56.82044378087585 "
+       material="color: #896b4b "
+       radius=" 0.18754954074260227 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 9.689303744251651   -80.19945688255582   -56.39842192088446 "
+       material="color: #475481 "
+       radius=" 0.20624313688305634 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 3.735370565760692   4.429032956301493   -23.5338260264975 "
+       material="color: #77757f "
+       radius=" 0.12761023920956868 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 4.500750344009102   95.8643043054321   -35.88354005234376 "
+       material="color: #83572d "
+       radius=" 0.21037016495587385 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 3.9565893922668898   -20.919948766176475   -33.43145957154415 "
+       material="color: #8a7158 "
+       radius=" 0.16581173584951348 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 6.011681933746056   -111.95523719561719   -56.67728188104452 "
+       material="color: #586594 "
+       radius=" 0.2391872586970017 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 0.975434211020361   -36.13866369381627   -15.511626115767232 "
+       material="color: #636a88 "
+       radius=" 0.16315444888696162 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 2.456538360560866   44.50499455239498   -40.309038518364304 "
+       material="color: #866645 "
+       radius=" 0.18465722691987213 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 0.5122366439328291   2.79056605107352   -10.722376376878774 "
+       material="color: #747fab "
+       radius=" 0.13167465428445405 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 0.442216798999307   0.3356798422449371   -10.886222615684698 "
+       material="color: #898284 "
+       radius=" 0.09448155018971484 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" 0.4087206900038956   20.66873908668767   -15.180107302305547 "
+       material="color: #6b77a4 "
+       radius=" 0.17043223776571206 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -2.7979751992270736   -93.82885526810479   -76.6856934675792 "
+       material="color: #5868a0 "
+       radius=" 0.25049464859546966 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -3.7921634546724077   -35.77802772665515   -85.78390496213129 "
+       material="color: #966d43 "
+       radius=" 0.22512533413275726 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -3.2559352669601824   -83.10111811494464   -63.986596375098415 "
+       material="color: #465280 "
+       radius=" 0.20791477958441953 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -3.823499029346682   -95.41318782968696   -57.77420514454658 "
+       material="color: #55649b "
+       radius=" 0.24076289095644463 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -0.9138356349505755   20.948326590479027   -13.556287924916225 "
+       material="color: #60698f "
+       radius=" 0.14622607711167826 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -3.321946018935807   -15.237798582066189   -48.090489334995546 "
+       material="color: #5a69a0 "
+       radius=" 0.2030231062565652 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -6.641734069055061   -0.8910911574268353   -76.27587414451713 "
+       material="color: #535c82 "
+       radius=" 0.19280849504682843 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -3.2145288905432783   -60.80453251263917   -34.39026476134984 "
+       material="color: #896139 "
+       radius=" 0.19538438748107756 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -5.151620006698987   -87.6883340028265   -44.18930259272396 "
+       material="color: #6f83cb "
+       radius=" 0.2843862730488672 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -10.607290416902428   -104.43283535315712   -86.26590892394756 "
+       material="color: #475381 "
+       radius=" 0.22344166537202295 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -3.3569948827418976   -7.660296183034433   -25.616140478897172 "
+       material="color: #5d6a98 "
+       radius=" 0.15986502287061238 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -1.9846621312099584   -22.640741209084517   -14.504395106750623 "
+       material="color: #b77a3f "
+       radius=" 0.19364428799813405 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -4.301728092481185   -94.51551229753062   -30.16238501185617 "
+       material="color: #485483 "
+       radius=" 0.20817270834500806 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -7.6786218998463545   143.27055210660183   -52.18479338850575 "
+       material="color: #485583 "
+       radius=" 0.23127122966523742 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -5.8778750132161655   -17.013538084972936   -38.88027376442715 "
+       material="color: #9f856b "
+       radius=" 0.1922887857005414 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -5.3918851118696365   -87.57504439291542   -32.941024336000574 "
+       material="color: #57669e "
+       radius=" 0.23378083973615155 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -4.377376078454711   -30.255680298006535   -26.368232817669252 "
+       material="color: #555e83 "
+       radius=" 0.15906064134098066 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -4.729850066797337   -30.15794091577631   -25.8233980269206 "
+       material="color: #6775a9 "
+       radius=" 0.19978718069789747 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -2.1379607853984055   -0.29922708838244455   -11.63147943471878 "
+       material="color: #8c8b9d "
+       radius=" 0.12017503354225392 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -7.135695640134911   -88.5390361662462   -34.854959283134335 "
+       material="color: #526195 "
+       radius=" 0.22600623183324683 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -11.279075988300596   -93.32936109949122   -53.38329177116475 "
+       material="color: #697cbf "
+       radius=" 0.27753367557183123 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -3.2443156948095226   20.561916452044255   -13.505977615616812 "
+       material="color: #6d7cb3 "
+       radius=" 0.1848882613965716 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -14.886435195564571   3.6786032862558504   -60.14939606918744 "
+       material="color: #8d5f32 "
+       radius=" 0.19391444961180804 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -6.415499499947438   20.94698468798306   -25.71787793339546 "
+       material="color: #556399 "
+       radius=" 0.17338992828184296 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -8.247452579632801   5.959532460565451   -29.650602765026054 "
+       material="color: #9a7f64 "
+       radius=" 0.17032755678206266 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -2.365371851384709   -26.415869428274128   -8.490249541978788 "
+       material="color: #886845 "
+       radius=" 0.14489946652345115 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -12.570327581483667   -15.937013506766636   -35.04895016067798 "
+       material="color: #977d63 "
+       radius=" 0.18073625592271875 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -4.962990102257488   -10.744018401377316   -13.525977931443194 "
+       material="color: #68729c "
+       radius=" 0.14262800199920922 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -4.930739321681154   19.611889793029384   -12.857469921529542 "
+       material="color: #6f7ba8 "
+       radius=" 0.1712453440752467 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -28.645719356675595   -15.560458638462617   -73.47911339788882 "
+       material="color: #6d80c6 "
+       radius=" 0.2681988446198603 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -5.187227351869669   20.37898663528057   -13.300154677999002 "
+       material="color: #5d647f "
+       radius=" 0.12928664139020593 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -114.97341999019085   -244.16502229970953   -274.0320212383614 "
+       material="color: #816342 "
+       radius=" 0.28017972366785804 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -9.012330490845565   -0.2334194493218488   -20.556684232533673 "
+       material="color: #626b8e "
+       radius=" 0.1389454286175986 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -28.953646776350276   -92.57002712996194   -62.17085548484041 "
+       material="color: #5c6ca7 "
+       radius=" 0.25498642651714876 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -9.101633436521546   23.411092591241687   -17.951824361977664 "
+       material="color: #6475b1 "
+       radius=" 0.19450002366293817 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -49.98434269006593   -96.80788571112213   -96.52787681120346 "
+       material="color: #4d5b8d "
+       radius=" 0.23968180003176648 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -54.844018112677226   -109.08757986272626   -105.78621451656919 "
+       material="color: #4c5a8b "
+       radius=" 0.24384006103669553 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -5.163429863249768   3.5795761434931754   -9.44247743547097 "
+       material="color: #9e9390 "
+       radius=" 0.11938628706517591 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -38.6389839742757   -86.64822953324125   -70.0379012493443 "
+       material="color: #5868a1 "
+       radius=" 0.2497519106321211 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -52.22905506022546   -95.6399965420986   -92.06028354678855 "
+       material="color: #485583 "
+       radius=" 0.228086639918378 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -44.970046989278444   -90.22773310701291   -78.93758197123144 "
+       material="color: #475482 "
+       radius=" 0.22122001292954777 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -40.94734044283256   -139.9778434008341   -68.26691332897634 "
+       material="color: #7185ce "
+       radius=" 0.31516494214213775 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -21.152035998864736   85.38355372132902   -35.06787984478743 "
+       material="color: #505b87 "
+       radius=" 0.20984340238948612 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -14.550582069892554   -13.958468971040553   -23.658197957619695 "
+       material="color: #917251 "
+       radius=" 0.15987000955146408 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -7.899121232867215   -11.079908888937728   -12.804449427948455 "
+       material="color: #ac8b68 "
+       radius=" 0.16198687906923945 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -5.931197597081402   3.6981059022991305   -8.821463750661415 "
+       material="color: #dea66c "
+       radius=" 0.18721921314654527 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -42.77678590192385   -77.67462306956594   -61.43114886942382 "
+       material="color: #4b598a "
+       radius=" 0.21991642539614817 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -24.20924886022737   23.06586336174993   -31.033893992158877 "
+       material="color: #89653f "
+       radius=" 0.17269632343766883 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -12.622399252179498   16.189398297207596   -16.144625151791008 "
+       material="color: #707795 "
+       radius=" 0.15566572137074935 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -44.018383163453905   -63.49811728900618   -54.597868793058474 "
+       material="color: #5b6ba6 "
+       radius=" 0.24329201875078202 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -0.42115726420752364   -1.1766806828544818   -0.5037668592842526 "
+       material="color: #bd9e7f "
+       radius=" 0.03699212517614721 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -0.42125100876918153   -1.1766442218821473   -0.5037736414631858 "
+       material="color: #ddc5b2 "
+       radius=" 0.0709921251761472 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -34.761928871026555   13.133259364255721   -41.008284226281546 "
+       material="color: #565f84 "
+       radius=" 0.1779316230940938 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -73.87147869023299   -123.69036493034181   -86.54646737022996 "
+       material="color: #5c6ca7 "
+       radius=" 0.27523677144814157 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -4.517547540701176   -14.861806154357536   -5.265736180067829 "
+       material="color: #757992 "
+       radius=" 0.1269118677864703 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -12.136308707672624   -1.8414997777079374   -14.077376726820791 "
+       material="color: #767582 "
+       radius=" 0.11671659630784607 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -37.75273796467116   29.269733213425464   -43.05368778838477 "
+       material="color: #a68868 "
+       radius=" 0.22183509299385323 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -26.15662679641809   1.3030009429770044   -29.500111928997754 "
+       material="color: #525d85 "
+       radius=" 0.16080414670554094 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -16.02495604954744   -123.80528560197945   -17.819111670887906 "
+       material="color: #835c35 "
+       radius=" 0.2213922437495098 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -7.176168064336259   37.301522079153045   -7.783179746663758 "
+       material="color: #ac7843 "
+       radius=" 0.20136997439696813 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -15.43182213406058   -6.540549173734721   -16.71180890154974 "
+       material="color: #70799c "
+       radius=" 0.1575730530034964 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -82.2954516588711   -109.74421058135694   -83.35644354849772 "
+       material="color: #57669e "
+       radius=" 0.26324038633181407 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -86.39642093064234   -110.82329370770773   -87.03099583914484 "
+       material="color: #515f93 "
+       radius=" 0.2535819703326517 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+
+       position=" -36.42642131810272   43.46039554348132   -35.81300735692022 "
+       material="color: #8b7258 "
+       radius=" 0.19561668673258598 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -58.24814901015381   -38.23395329963677   -56.21508469362797 "
+       material="color: #915e2e "
+       radius=" 0.21729474552475914 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -75.06418322857559   -111.57978449146748   -71.78423396619817 "
+       material="color: #475381 "
+       radius=" 0.22968841224225275 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -27.388610817464365   -42.0178653539841   -24.67497279320023 "
+       material="color: #4e5982 "
+       radius=" 0.17597509959328866 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -16.287285146612586   -28.121026870524133   -14.628514716616978 "
+       material="color: #8d755d "
+       radius=" 0.16329043382766767 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -22.53018816049109   19.657809025788918   -19.67118357609078 "
+       material="color: #8c7358 "
+       radius=" 0.1622730919419399 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -36.67560396914221   -7.999598177133565   -31.599794385088266 "
+       material="color: #5c6ba0 "
+       radius=" 0.20065086970540938 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -15.540974976140715   -52.18831848795668   -13.166921290635232 "
+       material="color: #616c99 "
+       radius=" 0.2013466146081838 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -35.267486287849835   139.93480336670595   -29.402383198317345 "
+       material="color: #636d96 "
+       radius=" 0.2505676703791476 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -91.41332894014909   -101.94110962113159   -75.77696941549829 "
+       material="color: #505e91 "
+       radius=" 0.2483637848944103 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -62.23702446498933   -59.20618225104382   -51.39271163356301 "
+       material="color: #895d32 "
+       radius=" 0.2153557061359625 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -84.99385996862246   -108.69643660599142   -69.64028395439456 "
+       material="color: #4e5c8e "
+       radius=" 0.24393835708062275 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -12.592947532549523   26.844051072393626   -10.1132724050387 "
+       material="color: #906e4b "
+       radius=" 0.1592935318293738 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -24.059505356018246   17.00777431800824   -18.82629769438342 "
+       material="color: #737487 "
+       radius=" 0.15600563802307993 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -16.486630221565175   10.298925118123602   -12.123064659903312 "
+       material="color: #6c79a9 "
+       radius=" 0.16905336115901173 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -50.987088456980466   11.769786298386443   -37.45290006164793 "
+       material="color: #6a6e84 "
+       radius=" 0.18562001535609834 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -105.62824292647386   -114.47874752924642   -77.35009600687219 "
+       material="color: #55649b "
+       radius=" 0.26459291157800646 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -36.46302527843985   -11.917329373420273   -26.60725641700764 "
+       material="color: #81684e "
+       radius=" 0.1654489588522307 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -42.70473485670425   -28.135553505816528   -30.736174557895644 "
+       material="color: #88623b "
+       radius=" 0.1865171403774281 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -96.59734026684227   -67.75402424031914   -68.48579042976628 "
+       material="color: #4a5787 "
+       radius=" 0.2299133953340693 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -32.93983782284125   19.706536024090465   -22.48209313404662 "
+       material="color: #535d83 "
+       radius=" 0.16532685380208237 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -18.51096883292063   2.5126495046756245   -12.45434665825179 "
+       material="color: #9f7a53 "
+       radius=" 0.1577076155769579 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -37.74267233794381   12.478805719085134   -24.936923093694737 "
+       material="color: #5a6387 "
+       radius=" 0.17222846094993507 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -40.16190709753841   -2.8573381960704314   -25.679638657355028 "
+       material="color: #525e8a "
+       radius=" 0.17592930749635735 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -18.165969211542993   1.6829404247498165   -11.482262743583776 "
+       material="color: #606786 "
+       radius=" 0.12849834559936535 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -44.39616089822633   -34.9171750824812   -28.023007632790833 "
+       material="color: #4c5780 "
+       radius=" 0.18026349429151217 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -4.708628335982903   -11.009284007891129   -2.8532558354893327 "
+       material="color: #83859a "
+       radius=" 0.12008015282261415 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -9.189521726640427   3.002173784727851   -5.496926854969432 "
+       material="color: #827d82 "
+       radius=" 0.08906935488608707 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -94.08620357120456   -61.23890276718309   -56.03956706234122 "
+       material="color: #475482 "
+       radius=" 0.22011910198969628 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -109.20591728911735   -61.99439948176223   -63.781626854973275 "
+       material="color: #546399 "
+       radius=" 0.2508940985743259 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -102.71378189652681   -93.96410461077653   -59.228867900414926 "
+       material="color: #4d5b8d "
+       radius=" 0.2415262097285053 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -98.53053869588213   -47.37008724446462   -56.69565769406554 "
+       material="color: #5c6ca7 "
+       radius=" 0.25860688850906344 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -134.26484735233478   -55.09389770466289   -73.32736177099318 "
+       material="color: #5e6ca1 "
+       radius=" 0.2669420026922832 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -106.98938282740131   -45.840494955239315   -57.60357295302817 "
+       material="color: #4c5781 "
+       radius=" 0.22049005151765005 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -112.46254635463818   -44.59977837968756   -57.30526453322902 "
+       material="color: #555e7f "
+       radius=" 0.22038631693728544 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -46.64641141662833   -3.3629139664733243   -23.16926733996105 "
+       material="color: #9d6937 "
+       radius=" 0.20100195407139462 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -75.80061676672443   -170.73822451621191   -37.20086457540725 "
+       material="color: #826648 "
+       radius=" 0.24303147923846566 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -29.66911281250548   -2.6963821358592783   -14.100388753550495 "
+       material="color: #91775b "
+       radius=" 0.16354944510787134 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -60.33447017520527   69.7327194287008   -28.21760353888814 "
+       material="color: #475381 "
+       radius=" 0.20482904761558016 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -184.53892492053956   -97.29107235659176   -84.88954297573596 "
+       material="color: #7f8299 "
+       radius=" 0.2761285208998828 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -51.49514983353306   19.65811909565218   -23.48933855600382 "
+       material="color: #6f7185 "
+       radius=" 0.18324435007930445 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -11.71866050132655   23.64000678758653   -5.218008591583738 "
+       material="color: #9d8368 "
+       radius=" 0.16501271898472533 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -153.0392185121944   -82.43248306428455   -63.85480518414081 "
+       material="color: #c47834 "
+       radius=" 0.3115021721863392 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -38.96676630947474   16.598665714324174   -16.096757438890002 "
+       material="color: #9c8064 "
+       radius=" 0.19207610051900342 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -47.11376361935512   1.7635798241399334   -19.295459374769795 "
+       material="color: #535d83 "
+       radius=" 0.17243635471420954 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -8.757427201461866   -48.00797841539933   -3.4738811304697834 "
+       material="color: #826c55 "
+       radius=" 0.1692412807313759 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -108.36394961118518   -62.29210839342372   -41.66074536901692 "
+       material="color: #55649b "
+       radius=" 0.24902117017727526 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -129.14571045403508   -25.756563715688284   -48.82652545706158 "
+       material="color: #6874a1 "
+       radius=" 0.2594913929596032 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -8.65767069860908   5.6571998571441835   -3.096229935351575 "
+       material="color: #9b8d84 "
+       radius=" 0.11345743415778808 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -25.22789799441863   21.582455883464092   -8.822811787459605 "
+       material="color: #8b745c "
+       radius=" 0.15954611648435896 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -43.40357912224833   -118.94951166215235   -13.963590235836916 "
+       material="color: #b07b46 "
+       radius=" 0.26994268507105373 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -47.114826022915864   -82.376467610558   -14.903642746968659 "
+       material="color: #84592f "
+       radius=" 0.20812005097539327 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -15.809518844141305   -11.302476607537935   -4.972321370887445 "
+       material="color: #a78159 "
+       radius=" 0.160093246833251 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -189.66275303536779   -155.24254293744673   -58.10289420379232 "
+       material="color: #536196 "
+       radius=" 0.2797025788188209 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -119.45084267863727   -97.60738845030943   -36.328532437819064 "
+       material="color: #4b5989 "
+       radius=" 0.2405477222586935 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -32.71868412597022   -31.093844689907513   -9.601185252179018 "
+       material="color: #886139 "
+       radius=" 0.17206902824923304 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -25.01650044234154   4.287866179254304   -6.976697887622566 "
+       material="color: #92704c "
+       radius=" 0.15234273046987026 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -94.96396040422572   -145.94037629760103   -26.05929681223532 "
+       material="color: #946435 "
+       radius=" 0.257257850200333 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -41.36118857257029   25.645540650021594   -11.026705982835125 "
+       material="color: #4f5981 "
+       radius=" 0.16881417751480932 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -41.77654731202446   94.9488235788184   -9.493968618499142 "
+       material="color: #515f92 "
+       radius=" 0.22751748803426422 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -24.248120024216586   -6.990429857527522   -5.333721633357906 "
+       material="color: #6c77a4 "
+       radius=" 0.17023941703830903 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -15.64271005383925   -15.036118153881302   -3.314031408057806 "
+       material="color: #89858f "
+       radius=" 0.13922842773832744 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -111.33899085170091   29.13557562894062   -22.3247089770029 "
+       material="color: #9c7751 "
+       radius=" 0.24368276326826996 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -21.421845453646288   10.110063130448921   -4.257975943268944 "
+       material="color: #636d94 "
+       radius=" 0.14923001364919408 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -88.3333818637645   67.39613398033137   -17.55167523851898 "
+       material="color: #93673b "
+       radius=" 0.23193867204293356 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -154.38478738258914   -72.98982233405418   -25.828477520539636 "
+       material="color: #4f5d90 "
+       radius=" 0.2524665716982808 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -103.41984473384967   -152.3884472613279   -15.779368023179236 "
+       material="color: #9a6b3c "
+       radius=" 0.2669017340258891 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -190.73693533813352   -290.14148139001475   -29.021367097166017 "
+       material="color: #4f5c8f "
+       radius=" 0.2895661550724612 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -67.23126009582901   87.72043656280276   -8.722061770677406 "
+       material="color: #9b8063 "
+       radius=" 0.24040057497146758 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -125.44574715254261   -96.33231160183986   -16.090039165648605 "
+       material="color: #56669d "
+       radius=" 0.26222006148355165 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -27.884052437721664   -50.05346037665497   -3.5351157666797626 "
+       material="color: #4c5988 "
+       radius=" 0.18442037333025474 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -47.51738686658568   -56.809298113290176   -5.867750638537753 "
+       material="color: #55649a "
+       radius=" 0.21742075967821553 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -170.7460463089248   -130.01318504115864   -19.74944852576578 "
+       material="color: #6476b7 "
+       radius=" 0.3057366445948502 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -13.892280328133479   3.1137236854400565   -1.525469697578558 "
+       material="color: #7c85ac "
+       radius=" 0.14703836332702114 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -60.70066044018408   -56.878280414185966   -6.026942960877943 "
+       material="color: #a4a2b1 "
+       radius=" 0.24819899427685418 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -31.02151154451001   -8.584928584079663   -3.043504606355268 "
+       material="color: #6f738a "
+       radius=" 0.15475390216381296 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -105.13564244195157   109.33382420820429   -9.44563742350533 "
+       material="color: #485583 "
+       radius=" 0.23177315546246585 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -110.17779001105878   -89.57709633347523   -8.435205518857984 "
+       material="color: #5a6aa5 "
+       radius=" 0.26393197653673234 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -24.993303325944826   2.001761585923946   -1.8055129399979253 "
+       material="color: #9c7851 "
+       radius=" 0.1605932948156582 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -48.481695537879496   -102.87377975533445   -3.0219385885252454 "
+       material="color: #886847 "
+       radius=" 0.22130278277998885 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -7.422772848207688   3.9072786748719173   -0.4390834607128938 "
+       material="color: #8d7c6d "
+       radius=" 0.08458521719659798 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -419.50338240618606   -354.1120802113729   -22.747595249919783 "
+       material="color: #979093 "
+       radius=" 0.3222924686660759 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -28.979963931154   1.3722632909541461   -1.5323842601820514 "
+       material="color: #566085 "
+       radius=" 0.14370003391526762 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -31.01513130639991   -23.43128944239172   -1.3733992169564357 "
+       material="color: #926f4a "
+       radius=" 0.17353863258385271 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -18.669994829363432   28.621253321097985   -0.5273029371569457 "
+       material="color: #856645 "
+       radius=" 0.1530171019405488 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -163.42708903458995   124.2918847568955   -2.672161883768892 "
+       material="color: #825e39 "
+       radius=" 0.247110272012381 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -28.17185695288261   35.40667361975796   -0.4172106474036703 "
+       material="color: #a8733e "
+       radius=" 0.20550235795357144 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -36.17216379016713   20.25659013880557   -0.3528007320402913 "
+       material="color: #866f57 "
+       radius=" 0.16425422923069607 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -46.15818435636328   -7.951100123294162   -0.19606208437253655 "
+       material="color: #8f7458 "
+       radius=" 0.18037665724407997 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -434.2119011649348   22.236167617450334   1.2225222362689918 "
+       material="color: #525c81 "
+       radius=" 0.28608541266201115 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -25.39846575077263   -14.920341264329545   0.6438030744851005 "
+       material="color: #977b5e "
+       radius=" 0.1637124124165032 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -199.1600029732403   -238.22041190080114   5.7641051679650825 "
+       material="color: #4c5987 "
+       radius=" 0.27481940820223144 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -25.015077175569708   4.216917875346723   0.8024905820986514 "
+       material="color: #616886 "
+       radius=" 0.13736436443601355 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -93.30641174403024   51.24386087630429   3.0718616707605015 "
+       material="color: #505b83 "
+       radius=" 0.21196819313094642 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -8468.451035064061   -3266.60363331795   509.1815675080492 "
+       material="color: #626883 "
+       radius=" 0.4533773065194322 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -36.52324256496145   -27.365706946165364   2.8146788742722006 "
+       material="color: #946334 "
+       radius=" 0.18457029428450564 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -80.96385547223328   -46.61663873841806   7.43740610621974 "
+       material="color: #9d7042 "
+       radius=" 0.23303083973615157 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -2.381561801283286   7.694231758237535   0.21942559822027718 "
+       material="color: #898489 "
+       radius=" 0.07907554521231348 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -18.82988384053301   -0.9576303948235926   1.7559124422912007 "
+       material="color: #91785d "
+       radius=" 0.13346187122814845 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -36.36698362015895   14.601480782620404   3.7739053157250715 "
+       material="color: #836444 "
+       radius=" 0.15769717758671803 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -36.39376107730552   -25.0441437017493   3.8527510578608855 "
+       material="color: #6c7bb3 "
+       radius=" 0.2156580738874629 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -52.77109066318792   -54.96615317923063   6.239707375747216 "
+       material="color: #4c5a8b "
+       radius=" 0.20272542416567924 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -21.243003248213473   -10.172446217187533   2.605553832878288 "
+       material="color: #9b7c5c "
+       radius=" 0.15588733579400108 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -52.24420693132908   -7.65973529359902   8.089490468825794 "
+       material="color: #835f3b "
+       radius=" 0.17426316161394947 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -5.967680885167354   4.858310413628236   0.97026652406669 "
+       material="color: #889adc "
+       radius=" 0.16500714433121 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -61.772010355727204   -32.0966822759398   12.471254132887438 "
+       material="color: #526092 "
+       radius=" 0.2064952159816002 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -220.36366574908885   148.63152717089434   48.93406727870146 "
+       material="color: #56618a "
+       radius=" 0.2705261766558359 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -59.87429379473023   -30.46904431397689   14.724662918595925 "
+       material="color: #5f70ad "
+       radius=" 0.23298084134883293 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -103.13593706759052   -41.10789479419207   26.543188089801312 "
+       material="color: #8a6a49 "
+       radius=" 0.22373837889320022 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -158.35163266782246   105.07528014312535   41.648920102853616 "
+       material="color: #556291 "
+       radius=" 0.2594310022898008 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -22.805605442930418   -13.607940459728551   6.390174768075144 "
+       material="color: #6a75a0 "
+       radius=" 0.1691014260540189 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -37.978497376289475   -15.769245284244178   11.012756907765697 "
+       material="color: #856b50 "
+       radius=" 0.16419101506700956 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -23.777319106034273   6.115600653761667   6.976646554891004 "
+       material="color: #5f6a97 "
+       radius=" 0.1556683382068706 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -36.66151405174056   -3.2673146070725645   10.90297102096835 "
+       material="color: #4f5c8c "
+       radius=" 0.1668254262097674 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -31.307636432651183   -17.142300850604666   9.413613013822118 "
+       material="color: #8f6d4a "
+       radius=" 0.16745026653506426 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -120.17803527936009   -48.41466948166051   37.75591092713478 "
+       material="color: #8a8999 "
+       radius=" 0.24882411616679428 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -11.099856283248869   28.42516309761728   3.6363030954104603 "
+       material="color: #95795b "
+       radius=" 0.1637491985891053 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -21.269569465868944   30.305481104468186   7.438373136197533 "
+       material="color: #846c54 "
+       radius=" 0.1566866445682525 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -33.29870054086828   -11.440071641171244   12.395691954975272 "
+       material="color: #646981 "
+       radius=" 0.15305480296318422 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -77.47717285811807   -81.25269758755128   29.21369608663026 "
+       material="color: #495580 "
+       radius=" 0.21361298393612121 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -36.917014666304176   -33.905490864162786   14.150099946614073 "
+       material="color: #485480 "
+       radius=" 0.17013873857626657 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -14.294264048765546   0.8353007141699391   5.594547825155507 "
+       material="color: #797a8e "
+       radius=" 0.11889547955200967 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -21.499356233499523   29.48172692682292   8.87302863623948 "
+       material="color: #5f6685 "
+       radius=" 0.15737999635934266 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -96.3326591626153   55.419635797121494   40.25798267518357 "
+       material="color: #957553 "
+       radius=" 0.2373800967843324 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -33.18142633417492   37.16409564718322   16.3587026331799 "
+       material="color: #5f6c9a "
+       radius=" 0.19800755553345958 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -124.1704868636585   26.013961531856197   62.08487328518811 "
+       material="color: #9d6c3b "
+       radius=" 0.25529723495298917 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+
+       position=" -116.20057726120069   43.663747457685695   58.816640037786875 "
+       material="color: #86623d "
+       radius=" 0.22978496975008061 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -13.424467819214184   42.02150522305718   6.852842945596508 "
+       material="color: #836e59 "
+       radius=" 0.16477038987243997 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -4.499292323076832   0.7928622389954876   2.3617634917534787 "
+       material="color: #9da4cb "
+       radius=" 0.12445319061389723 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -317.2091204378627   6.313376327668921   169.50340337948134 "
+       material="color: #827771 "
+       radius=" 0.27729579267445076 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -11.934164629743465   1.529626325037292   6.568542307314239 "
+       material="color: #86725e "
+       radius=" 0.10392323013552648 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -30.563446570865825   24.562757624009283   16.99501542158561 "
+       material="color: #82684d "
+       radius=" 0.16114940998794247 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -68.81808399058025   28.040140279841278   39.23608081395877 "
+       material="color: #8a5d31 "
+       radius=" 0.20735802199014394 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -8.269244972826636   -31.104682825386853   4.802800368712071 "
+       material="color: #4d5880 "
+       radius=" 0.144356072132163 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -2.0875116005584644   -5.587450838718936   1.31364533156907 "
+       material="color: #8a796a "
+       radius=" 0.06403535943628406 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -73.96413204691879   -1.2620341352198727   47.71449444728224 "
+       material="color: #546191 "
+       radius=" 0.21662910074233527 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -237.37065389429137   302.18558685163987   156.56432509288126 "
+       material="color: #84623e "
+       radius=" 0.2867992618423517 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -190.02240098727708   251.63196123348723   127.53579390284 "
+       material="color: #805933 "
+       radius=" 0.27200797586269065 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -26.801743292086062   -7.237714230265504   18.429671451285614 "
+       material="color: #89735d "
+       radius=" 0.15539314273610372 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -83.28992973216653   -26.912587469078698   58.869639248652646 "
+       material="color: #95826f "
+       radius=" 0.231200349996952 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -290.1197099774627   301.9686676968184   207.3768542540471 "
+       material="color: #a8988c "
+       radius=" 0.33249967049556145 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -24.799174846930832   -46.97435095031868   18.29148518628116 "
+       material="color: #6172af "
+       radius=" 0.22474889187559857 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -22.33307516272784   7.524227511124715   18.33627621840165 "
+       material="color: #807d87 "
+       radius=" 0.14793699872172694 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -16.273908087353114   -22.813225748502006   13.363638718554508 "
+       material="color: #94785a "
+       radius=" 0.1633025515617489 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -54.44040564038623   20.233346614296646   45.53463351043783 "
+       material="color: #4e5984 "
+       radius=" 0.19380898026290722 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -530.8733297343855   703.5228222075763   451.13766836380904 "
+       material="color: #828fbf "
+       radius=" 0.39776122044137996 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -12.796765854063642   -38.5905648741311   11.218338038724683 "
+       material="color: #666e8d "
+       radius=" 0.17218494791693678 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -5.083040645309389   12.643383149839737   4.469081871844419 "
+       material="color: #8d755d "
+       radius=" 0.1138739340135955 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -13.712387603791989   12.34561313974185   12.154260706764074 "
+       material="color: #a38361 "
+       radius=" 0.16058707346187157 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -51.646358832356476   -11.609774040773285   46.370493058908195 "
+       material="color: #525d84 "
+       radius=" 0.1909771324232766 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -69.91248760507399   -157.52713769630515   66.81569100729796 "
+       material="color: #876441 "
+       radius=" 0.24615173402588914 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -58.75994233730587   71.783835589988   57.32823164010684 "
+       material="color: #525c80 "
+       radius=" 0.2107552252054577 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -179.8533791032057   250.45199049478074   187.76416616128233 "
+       material="color: #86592e "
+       radius=" 0.2812414210311542 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -26.620078393448658   23.285194243727613   29.80863215301588 "
+       material="color: #927659 "
+       radius=" 0.18244443096204885 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -10.874241371325827   12.892982106930695   12.376966299218399 "
+       material="color: #7a7885 "
+       radius=" 0.12612290508769544 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -37.34360249983357   5.223538441294966   42.89227831139239 "
+       material="color: #817979 "
+       radius=" 0.17614062390377955 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -4.4604244838988665   13.280961642334756   5.24930647906162 "
+       material="color: #8387a3 "
+       radius=" 0.14017183701154107 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -70.01076062999594   -46.551066443685386   88.543387250713 "
+       material="color: #846b50 "
+       radius=" 0.22114090444415796 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -37.2519853491568   172.0793239219066   47.96442030484723 "
+       material="color: #505e91 "
+       radius=" 0.25645382235366415 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -112.66435321911531   -18.214286840980595   148.9134641803168 "
+       material="color: #99836e "
+       radius=" 0.2662104910358888 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -15.888670968971487   27.2661448895235   21.468559336074364 "
+       material="color: #7f6b57 "
+       radius=" 0.15276373074924213 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -23.389322486075145   -12.211684397282175   33.43164027680759 "
+       material="color: #727486 "
+       radius=" 0.16596413059226317 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -2.627353378554608   -20.666642328083647   3.8042114889057173 "
+       material="color: #856c50 "
+       radius=" 0.12703564432137177 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -113.4525965345663   35.36070979550375   168.4951530035384 "
+       material="color: #a5713d "
+       radius=" 0.28433367483892735 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -6.22574336807507   -3.284135414696327   9.499520162673202 "
+       material="color: #72799a "
+       radius=" 0.1173929320628501 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -25.854746947907525   -37.76530164604022   42.16168126651826 "
+       material="color: #566496 "
+       radius=" 0.2037994075687922 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -111.15805553547399   -1.298236938343438   204.26818042551525 "
+       material="color: #987c5f "
+       radius=" 0.276617835216762 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -5.028475132304544   5.03256002583123   9.359534639537426 "
+       material="color: #7e7b84 "
+       radius=" 0.09408571986695975 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -9.944016471422724   -22.726648569566546   18.747949571921087 "
+       material="color: #6879b4 "
+       radius=" 0.19788688715465858 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -13.570652136794925   3.1969887249406854   26.12454876203888 "
+       material="color: #5d678a "
+       radius=" 0.1504850095847839 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -53.80130932241234   189.2882603068773   104.29909962263316 "
+       material="color: #8d5f33 "
+       radius=" 0.2632705995387949 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -12.94663552627519   -52.87952720636687   27.29676581586626 "
+       material="color: #996d40 "
+       radius=" 0.20587974806628254 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -20.12267222980811   -1.1713177006586613   43.98024707115805 "
+       material="color: #4c5882 "
+       radius=" 0.16863383258579928 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -12.286310453518668   -0.01105539573582384   29.2393584846449 "
+       material="color: #7d7b87 "
+       radius=" 0.1509608958207222 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -25.362078780737033   -62.40239536129244   60.68174091332976 "
+       material="color: #80674c "
+       radius=" 0.19997945310918647 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -7.570767720155068   24.143261869648338   18.572835250829694 "
+       material="color: #555f85 "
+       radius=" 0.1476456707310712 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -21.101814081315617   12.01528150268153   59.14806373019803 "
+       material="color: #505d8d "
+       radius=" 0.19502179857373164 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -11.803319553261947   -38.07920312397148   33.64263014095022 "
+       material="color: #ac723b "
+       radius=" 0.21747362805445247 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -18.766380178794563   33.1581280636984   53.740385468753594 "
+       material="color: #98816b "
+       radius=" 0.20864242071927758 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -34.96686990046107   48.40189416724262   105.31571462778965 "
+       material="color: #806549 "
+       radius=" 0.21567888624916248 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -7.619222640746893   -31.026009553446315   23.64421961364016 "
+       material="color: #5e678b "
+       radius=" 0.16721256256755637 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -4.311398599481465   32.36514111556054   13.607786374244439 "
+       material="color: #8b6e50 "
+       radius=" 0.16063566610302035 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -9.781644453218426   14.894663826663269   31.024929492482286 "
+       material="color: #8a735a "
+       radius=" 0.16100366563640506 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -34.48667206650861   -15.834747891904707   113.89230494052333 "
+       material="color: #85582d "
+       radius=" 0.22122076698836185 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -13.240619694542767   -13.338056825045037   45.16977532673083 "
+       material="color: #5f6990 "
+       radius=" 0.18399128073137588 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -1.7957207041377963   -3.7998099259640825   6.43705444284342 "
+       material="color: #8a95c1 "
+       radius=" 0.13602507613296116 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -39.35433340213153   142.96131852835757   151.95600681446143 "
+       material="color: #4c5988 "
+       radius=" 0.2549237787730983 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -13.089981634488677   28.75668176475134   52.281646545514384 "
+       material="color: #a46b35 "
+       radius=" 0.21679530723771762 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -9.860567912115393   11.227647459785086   40.115492794780245 "
+       material="color: #6572a2 "
+       radius=" 0.19624228735916505 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -14.615121733702846   -25.872175778768643   65.1793640510157 "
+       material="color: #866643 "
+       radius=" 0.19444071487831752 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -8.582456887494825   -40.28048583149552   39.00195081843255 "
+       material="color: #82694f "
+       radius=" 0.17676985312679502 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -7.444187422406417   2.297569004958154   39.364890611366306 "
+       material="color: #867058 "
+       radius=" 0.1624828874158188 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -2.1414428040253135   -18.727338742166275   11.395819434497888 "
+       material="color: #76747f "
+       radius=" 0.12266941055707233 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -7.501061718954708   -17.064012028078633   46.02083947904968 "
+       material="color: #806548 "
+       radius=" 0.1675439588870104 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -1.7380197384795066   18.711187697750866   17.697105646139686 "
+       material="color: #836b51 "
+       radius=" 0.13578144011632381 "
+     ></a-sphere>
+     <a-sphere
+       static-body
+       position=" -0.2658604262427496   13.473008114980354   2.9422904857051417 "
+       material="color: #927556 "
+       radius=" 0.11675914134283612 "
+     ></a-sphere>        
+
+
+      </a-scene>
+  </body>
+</html>
+        
